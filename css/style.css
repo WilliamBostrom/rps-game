@@ -1,0 +1,547 @@
+*:focus {
+  outline: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: "Bangers", sans-serif;
+}
+
+.first-side {
+  background-image: url("../images/rock-texture-stone-surface-natural-stone-geological-pattern-rough-texture-rocky-background-ear-763909944.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 20vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  -webkit-text-stroke: 2px #000;
+}
+#omOss {
+  display: none;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(101, 57, 5);
+  text-shadow: 0 0.2px 0 #653905, 0 0px 0 #653905;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  min-height: 40vh;
+}
+
+.start-now {
+  position: relative;
+  font-family: "Bangers", sans-serif;
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(101, 57, 5);
+  text-shadow: 0 0.2px 0 #653905, 0 0px 0 #653905;
+  height: 44px;
+  width: 180px;
+  font-size: 26px;
+  border-top: none;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #ff5301, #ffd901);
+  /*  clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%); */
+  border-radius: 13px;
+  border-bottom: 5px solid #653905;
+  border-right: 2px solid #653905;
+  border-left: 2px solid #653905;
+  border-top: 1px solid #653905;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.025);
+}
+
+.start-now:hover,
+.start-now:focus {
+  border-top: 5px solid #653905;
+  border-right: 2px solid #653905;
+  border-left: 2px solid #653905;
+  border-bottom: 1px solid #653905;
+  background: linear-gradient(to top, #ff5301, #ffd901);
+}
+
+.start-now::before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 50%;
+  width: 98%;
+  border-radius: 8px 8px 3px 3px;
+  background: linear-gradient(
+    to top,
+
+    rgba(245, 238, 238, 0.021),
+    rgba(255, 255, 255, 0.945)
+  );
+  opacity: 0.6;
+}
+
+.start-now::before:hover {
+  content: "";
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  height: 50%;
+  width: 98%;
+  border-radius: 8px 8px 3px 3px;
+  background: linear-gradient(
+    to bottom,
+
+    rgba(245, 238, 238, 0.021),
+    rgba(255, 255, 255, 0.945)
+  );
+  opacity: 0.6;
+}
+
+/* START GAME CSS */
+
+.go-back {
+  top: 7px;
+  left: 10px;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  color: #1a1919;
+  text-align: center;
+  text-transform: uppercase;
+  height: 36px;
+  width: 36px;
+
+  font-weight: bold;
+  background: linear-gradient(to bottom, #ff5301, #ffd901);
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.025);
+  border-radius: 8px 8px 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.go-back::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 50%;
+  width: 100%;
+  border-radius: 8px 8px 3px 3px;
+  background: linear-gradient(
+    to top,
+    rgba(245, 238, 238, 0.021),
+    rgba(255, 255, 255, 0.945)
+  );
+  opacity: 0.6;
+}
+
+.go-back:hover {
+  transform: rotate(60deg);
+}
+
+.go-back:hover svg {
+  transform: rotate(-60deg);
+}
+
+.go-back {
+  stroke: black;
+}
+
+.choose-figur {
+  font-size: 56px;
+  -webkit-text-stroke: 2px #000;
+  margin-top: 4rem;
+}
+
+/* EFTER CHOOSE PLAYER SLIDE / SPEL SIDAN */
+.third-side {
+  background-image: url("/images/vector-art-cobblestone-wall-205576723.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.game1 {
+  background-color: rgba(241, 240, 240, 0.507);
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 16px;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* CARD FROM INDEX2  to INDEX3*/
+
+.slide-container {
+  border-radius: 25px 25px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.175);
+  transition: all 0.3s;
+}
+
+.slide-container:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.125);
+}
+
+.card-2 {
+  height: 450px;
+  width: 320px;
+  border-radius: 25px;
+  background-color: rgba(233, 224, 224, 0.788);
+  opacity: 0.95;
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.025);
+}
+
+.image-content-2,
+.card-content-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 14px;
+}
+
+.image-content-2 {
+  row-gap: 5px;
+  position: relative;
+}
+
+.overlay-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom, #ff5301, #ffd901);
+  border-radius: 25px 25px 0 0px;
+}
+
+.overlay-2::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 50%;
+  width: 100%;
+  border-radius: 25px 25px 0 0px;
+  background: linear-gradient(
+    to top,
+
+    rgba(245, 238, 238, 0.021),
+    rgba(255, 255, 255, 0.945)
+  );
+  opacity: 0.7;
+}
+
+.card-image-2 {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  padding: 3px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-image-2,
+.card-img-2 {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-image-2 {
+  height: auto;
+  width: 100px;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+}
+
+.name {
+  font-size: 24px;
+  color: white;
+  margin-top: -10px;
+  -webkit-text-stroke: 0.5px black;
+  text-shadow: 2px #653905;
+}
+
+.description {
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-links a {
+  width: 40px;
+  margin: 1em;
+}
+
+.back-text {
+  display: none;
+}
+
+.howtoplay-side {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#howtoplay {
+  display: none;
+  background-image: url("/images/vector-art-stone-wall-528504917.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.illu {
+  border-radius: 50px;
+  width: 550px;
+  box-shadow: -1px 1px 49px 12px rgb(0, 0, 0);
+  -webkit-box-shadow: -1px 1px 49px 12px rgb(0, 0, 0);
+  -moz-box-shadow: -1px 1px 49px 12px rgb(0, 0, 0);
+  margin-top: -10px;
+}
+
+@media (max-width: 1388px) {
+  .teamgrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-bottom: 46px;
+  }
+  .card-2 {
+    width: 330px;
+  }
+}
+
+@media (max-width: 726px) {
+  .teamgrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-bottom: 46px;
+  }
+  .card-2 {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .illu {
+    width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .start-now {
+    font-size: 20px;
+  }
+
+  .choose-figur {
+    font-size: 40px;
+  }
+  .back-text {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+  }
+
+  .illu {
+    width: 380px;
+  }
+
+  .go-back {
+    height: 36px;
+    width: 36px;
+  }
+
+  .go-back:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 400px) {
+  .start-now {
+    font-size: 20px;
+  }
+
+  .illu {
+    width: 300px;
+  }
+
+  .img-back {
+    display: block;
+  }
+
+  .choose-figur {
+    font-size: 40px;
+  }
+
+  .back-text {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+  }
+
+  .go-back {
+    height: 36px;
+    width: 36px;
+  }
+
+  .go-back:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Williams cs card */
+.enkelt {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  opacity: 0.9;
+}
+
+.name .info-rubrik h2 {
+  margin-top: 10px;
+}
+
+.info-rubrik {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  position: relative;
+}
+
+.info-rubrik::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #ff5301, #ffd901);
+}
+
+h2.name.info-rubrik {
+  margin-top: 5px;
+}
+
+.contact-info {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  color: #000;
+  list-style: none;
+}
+
+.svg-w {
+  width: 14px;
+  padding: 4px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #ff5301, #ffd901);
+  margin-right: 5px;
+}
+
+#andy-name {
+  font-size: 0.9rem;
+}
+
+/* Uppdaterade allas mail nr med href */
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+}

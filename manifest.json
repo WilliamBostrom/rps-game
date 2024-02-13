@@ -1,0 +1,22 @@
+{
+  "name": "Roch Paper Scissors Game - Website",
+  "short_name": "RPS by Team Enkelt",
+  "description": "Chas Academy project for Rock Paper Scissors by Team Enkelt",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
+  "icons": [
+    {
+      "src": "/images/EnkeltTeamBlack.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/EnkeltTeamBlack.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Team Enkelts Rock Paper Scissors Game! Play for free!"
+  />
+    <meta property="og:title" content="RPS Team Enkelt">
+    <meta property="og:description" content="Rock Paper Scissors Game">
+    <meta property="og:image" content="https://i.ibb.co/YZ05p4G/rps-enkelt.png">
+    <meta property="og:url" content="https://enkelt-rsp.netlify.app/index.html">
+    <meta name="theme-color" content="#333333">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="images/EnkeltTeam.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/game.css" />
+    <script src="js/js.js" defer></script>
+    <title>RPS Team Enkelt</title>
+  </head>
+  <body>
+    <section class="second-side close-1">
+   
+        <button class="go-back" id="backstart">
+          <p class="back-text">back</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="black"
+            class="svg-back"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+            />
+          </svg>
+        </button>
+     
+      <header>
+        <h1 class="choose-figur">Choose your player</h1>
+      </header>
+
+      <main class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="/images/old-man.avif"
+                    alt="Old man"
+                    class="card-img human-img"
+                    data-rock-image="/img/human-Rock-B2T.avif"
+                    data-paper-image="/img/human-Paper-B2T.avif"
+                    data-scissor-image="/img/human-Scissors-B2T.avif"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Old Man</h2>
+                <p class="description">
+                  Embark on a journey with the Old Man, a seasoned veteran in the timeless game of rock-paper-scissors. With 70 years of play, he has mastered the art, honing strategies and delving into the nuances of each move. Weathered hands, marked by countless rounds, safeguard a lifetime of play. Choose the Old Man and unravel the mysteries of a game played through decades.
+              </p>
+                </p>
+                <a id="pick-unknown" class="choose-player start-nows"
+                  >Choose Old man</a
+                >
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="/images/cats.avif" alt="Cat" class="card-img cat-img" 
+                  data-rock-image="/img/cat-Rock-B2T.avif"
+                  data-paper-image="/img/cat-Paper-B2T.avif"
+                  data-scissor-image="/img/cat-Scissors-B2T.avif"
+                    />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Cat</h2>
+                <p class="description">
+                  Explore the world through the eyes of Cat. This four-legged friend has the most graceful and elegant paws, making it the master of mobility. Cat takes you on adventures through narrow alleys, treading over obstacles, and discovering the flaws of the enemy as only a cat can. Choose Cat and let your curiosity guide you.
+              </p>
+                <a id="pick-cat" class="choose-player start-nows">Choose Cat</a>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="/images/robots.avif"
+                    alt="Robot"
+                    class="card-img robot-img"
+                    data-rock-image="/img/Robot-Rock-B2T.avif"
+                    data-paper-image="/img/Robot-Paper-B2T.avif"
+                    data-scissor-image="/img/Robot-Scissors-B2T.avif"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Robot</h2>
+                <p class="description">
+                  Step into the future with Robot, the mechanical companion with robot hands. Robot is the master of programming and is ready to take you to new heights. With its precision and high-tech hands, Robot is the perfect choice for the JavaScript developer of the future. Choose Robot and navigate the digital adventure!
+              </p>
+                <a id="pick-robot" class="choose-player start-nows">Choose Robot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </main>
+      
+    </section>
+    <section class="third-side close-2">
+      <a id="back1">
+        <button class="go-back">
+          <p class="back-text">back</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="black"
+            class="svg-back"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+            />
+          </svg>
+        </button>
+      </a>
+      <header>
+        <h1 class="choose-figur">Last step!</h1>
+      </header>
+      <div class="slide-containern">
+        <div class="card-2">
+          <div class="image-content-2">
+            <span class="overlay-2"></span>
+            <div class="card-image-2">
+              <img src="/images/man.avif" alt="Image choosen figure" class="card-image-2" id="figur-img" />
+            </div>
+          </div>
+          <div class="card-content-2">
+            <form>
+              <div class="input-wrapper">
+                <label for="username"
+                  ><p class="text-p">Enter Nickname (optional)</p></label
+                >
+                <div class="input-container">
+                  <input type="text" id="username" name="username" value="Player"/>
+                
+                
+                  </button>
+                  <p class="text-p first-to">First to: (optional) </p>
+                  
+                  <div class="rounds">
+                  
+
+                  <div class="round-3 radlabel ">
+                    <input id="round3" type="radio" name="checkbox" value="3">
+                    <label for="round3"><span>3</span></label>
+                  </div>
+
+                  <div class="round-5 radlabel ">
+                    <input id="round5" type="radio" name="checkbox" value="5">
+                    <label for="round5"><span>5</span></label>
+                  </div>
+
+                  <div class="rounds-10 radlabel ">
+                    <input id="round10" type="radio" name="checkbox" value="10">
+                    <label for="round10"><span>10</span></label>
+                  </div>
+                
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </form>
+            <a class="start-now start-game" id="letsPlay" >Lets play!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rsp-side close-3">
+      <a id="back2">
+        <button class="go-back">
+          <p class="back-text">back</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="black"
+            class="svg-back"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+            />
+          </svg>
+        </button>
+      </a>
+      <div class="rules">
+            <button class="rules-btn" id="rules">
+              <p class="back-text2">?</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="svg-back" width="36px">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+            </svg>
+            </button>
+      </div>
+      <dialog class="modalContainer" id="modal">
+          <button class="closeBtn">X</button>
+          <img class="illu" src="img/rules.avif" alt="Image of rules for rock paper scissors">
+      </dialog>
+      <header>
+        <div class="score-board">
+          <div class="player"><h1 class="names" id="playerName">Player</h1></div>
+          <div class="player-score"><h1>0</h1></div>
+          <div>
+            <h1>VS</h1>
+          </div>
+          <div class="computer-score"><h1>0</h1></div>
+          <div class="computer"><h1 class="names">Mr.Enkelt</h1></div>
+        </div>
+      </header>
+
+      <main>
+        <div class="figurer">
+          <img src="/images/man.avif" alt="Players figure" class="player-figur" id="figur-img" />
+          <div class="retstart">
+            <button class="restart-btn" id="restart">RESTART</button>
+          </div>
+          <img src="../images/ny-ninja.avif" alt="Computers figure" class="computer-figur" id="close-rsp" />
+        </div>
+        <h1 class="winner">Choose carefully</h1>
+        <div class="hands">
+          <div class="player-hand ">
+            <img
+              src="assets/human/rock.avif"
+              alt="Players rock-paper-scissors hand"
+              width="100px"
+              class="play-hand"
+              id="players-hand"
+            />
+          </div>
+        
+          <div class="computer-hand">
+            <img src="assets/dator/rock.avif" alt="Computers rock-paper-scissors hand" class="comp-hand" />
+          </div>
+        </div>
+      </main>
+      <div class="center-winner">
+      <img src="/images/man.avif" alt="Players figure" class="player-figurs winner-player" id="figur-img" />
+      <img src="../images/ny-ninja.avif" alt="Computer figure" class="computer-figurs winner-computer" />
+   
+      <a class="start-now hidden-button" id="playAgain">PLAY AGAIN?</a> </div>
+      <footer>
+        <section class="button-pick">
+          <button class="pick-weapon rocks" id="rock">
+            <img src="img/Human-Rock-B2T.avif" alt="rock button" width="70px" />
+          </button>
+          <button class="pick-weapon papers"id="paper">
+            <img src="img/Human-paper-B2T.avif" alt="paper button" width="70px" />
+          </button>
+          <button class="pick-weapon scissor" id="scissors">
+            <img src="img/Human-Scissors-B2T.avif" alt="scissors button" width="70px" />
+          </button>
+        </section>
+      </footer>
+    </section>
+    <section class="dice-side open-dice">
+      
+        <button class="go-back open-rsp">
+          <p class="back-text">back</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="black"
+            class="svg-back"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+            />
+          </svg>
+        </button>
+      
+      <header>
+        <div class="score-board">
+          <div class="player"><h1 class="names" id="playerName">Player</h1></div>
+          <div class="player-score"><h1 id="player-scores">0</h1></div>
+          <div>
+            <h1>VS</h1>
+          </div>
+          <div class="player-score"><h1 id="computer-scores">0</h1></div>
+          <div class="computer"><h1 class="names">Mr.Enkelt</h1></div>
+        </div>
+      </header>
+
+      <main>
+        <div class="figurer">
+          <img src="images/robots.avif" alt="" class="player-figur" id="figur-img"/>
+          <div class="retstart">
+            <button class="restart-btn" id="reset">RESTART</button>
+          </div>
+          <img src="images/ny-ninja.avif" alt="" class="computer-figur" />
+        </div>
+        <div>
+          <h1 id="winnerDice">Secret dice game, good luck!</h1>
+         
+        </div>
+        <section class="dice-btn">
+          <div class="dice-container">
+            <div class="dice">
+              <img class="img1" alt="players dice" src="images/dice6.avif" />
+            </div>
+
+            <div class="dice">
+              <img class="img2" alt="computers dice" src="images/dice6.avif" />
+            </div>
+          </div>
+          <div class="btn-center">
+            <button class="refresh" id="buttonDice">Play!</button>
+          </div>
+        </section>
+      </main>
+    </section>
+  </body>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+
+    // För swiper.js
+    let initialSlides;
+  
+    if (window.innerWidth < 650) {
+      initialSlides = 1;
+    } else if (window.innerWidth < 1200) {
+      initialSlides = 2;
+    } else {
+      initialSlides = 3;
+    }
+  
+    let swiper = new Swiper(".slide-content", {
+      slidesPerView: window.innerWidth < 650 ? 1 : window.innerWidth < 1200 ? 2 : 3,
+      spaceBetween: 50,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      initialSlide: initialSlides,
+    });
+  
+    window.addEventListener("resize", function () {
+      swiper.params.slidesPerView = window.innerWidth < 650 ? 1 : window.innerWidth < 1200 ? 2 : 3;
+      swiper.update();
+    });
+
+  </script>
+  
+  
+</html>
